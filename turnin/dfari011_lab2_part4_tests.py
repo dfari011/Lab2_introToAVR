@@ -1,0 +1,13 @@
+tests = [ { 'description': 'PINA 0x40 PINB 0x40 PINC 0x40 => PORTD: 0x31',
+    'steps': [{'inputs': [('PINA',0x40), ('PINB',0x40), ('PINC',0x40)],'iterations': 2}],
+    'expected': [('PORTD',0x31)],
+    },
+    {'description': 'PINA 0x00 PINB 0x00 PINC 0x00=> PORTD: 0x00',
+    'steps': [ {'inputs': [('PINA',0x00),('PINB',0x00),('PINC',0x00)], 'iterations': 2 } ],
+    'expected': [('PORTD',0x00)],
+    },
+    {'description': 'PINA 0x1E PINB 0x1E PINC 0x1E=> PORTD: 0x14',
+    'steps': [ {'inputs': [('PINA',0x1E),('PINB',0x1E),('PINC',0x1E)], 'iterations': 2 } ],
+    'expected': [('PORTD',0x14)],
+    },
+]
